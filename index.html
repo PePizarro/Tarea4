@@ -1,0 +1,116 @@
+
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="/normalize.css">
+        <link rel="stylesheet" href="/style.css">
+        <link rel="stylesheet" href="/homepage.css">
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Wix+Madefor+Text:wght@400;700;800&display=swap" rel="stylesheet">       
+        <title>Tarea 4</title>
+    </head>
+    <body>
+        <nav>
+            <a href="/" class="nav-title">Portafolio</a>
+            <div id="nav-links" class="nav-links">
+                <a href="./aboutme/aboutme.html" class="nav-link">Sobre mí</a>
+                <a href="./calculos/calculos.html" class="nav-link">Cálculos</a>
+            </div>
+            <svg onclick="toggleNav()" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+            </svg> 
+            <div id="nav-menu" class="hidden nav-menu">
+                <svg onclick="toggleNav()" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+                  </svg>
+                <a href="./aboutme/aboutme.html">Sobre mí</a>
+                <a href="./calculos/calculos.html">Cálculos</a>
+            </div>                       
+        </nav>
+        
+        <main>  
+            <div class="hero-container">
+                <div class="hero-title">
+                    <h2>Mi nombre es Pedro Pizarro</h2>
+                    <p>Estudiante de Ingeniería Civil Informática</p>
+                </div>
+                <div class="hero-buttons">
+                    <a href="#galeria">Galería</a>
+                    <a href="#contacto">Contacto</a>
+                </div>
+            </div>
+            <div class="gallery-container" id="galeria">
+                <h2>Galería</h2>
+
+                <div class="gallery-grid">
+                    <div class="image-container ">
+                        <img src="https://universidadpepizarro.blob.core.windows.net/tarea2/witcher.jpg" alt="witcher">
+                    </div>
+                    <div class="image-container card-wide card-tall">
+                        <img src="https://universidadpepizarro.blob.core.windows.net/tarea2/EstrellasBebop1.png" alt="estrellas">
+                    </div>
+                    <div class="image-container ">
+                        <img src="https://universidadpepizarro.blob.core.windows.net/tarea2/gargantua.jpg" alt="gargantua">
+                    </div>
+                    <div class="image-container card-tall">
+                        <img src="https://universidadpepizarro.blob.core.windows.net/tarea2/hongo.jpg" alt="hongo">
+                    </div>
+                    <div class="image-container ">
+                        <img src="https://universidadpepizarro.blob.core.windows.net/tarea2/fogata.jpg" alt="fogata">
+                    </div>
+                    <div class="image-container card-tall">
+                        <img src="https://universidadpepizarro.blob.core.windows.net/tarea2/minastirith.jpg" alt="minastirith">
+                    </div>
+                    <div class="image-container card-wide card-tall">
+                        <img src="https://universidadpepizarro.blob.core.windows.net/tarea2/sierra.jpg" alt="sierra">
+                    </div>
+                    <div class="image-container card-tall">
+                        <img src="https://universidadpepizarro.blob.core.windows.net/tarea2/luna.jpg" alt="luna">
+                    </div>
+                    <div class="image-container card-tall">
+                        <img src="https://universidadpepizarro.blob.core.windows.net/tarea2/bebop.jpg" alt="bebop">
+                    </div>
+                    <div class="image-container ">
+                        <img src="https://universidadpepizarro.blob.core.windows.net/tarea2/sollipulli.jpg" alt="sollipulli">
+                    </div>
+                    <div class="image-container ">
+                        <img src="https://universidadpepizarro.blob.core.windows.net/tarea2/cabros.jpg" alt="cabros">
+                    </div>
+                    <div class="image-container card-wide">
+                        <img src="https://universidadpepizarro.blob.core.windows.net/tarea2/alpacas.jpg" alt="cerro">
+                    </div>
+                </div>
+
+            </div>
+            <div class="form-container" id="contacto">
+                <h2>Contacto</h2>
+                <form id="contact-form">
+                    <div>
+                        <label>Nombre</label>
+                        <input type="text" placeholder="Pedro Pizarro" required/>
+                    </div>
+                    <div>
+                        <label>Correo</label>
+                        <input type="email" placeholder="pepizarro@alumnos.uai.cl" required/>
+                    </div>
+                    <div>
+                        <label>Asunto</label>
+                        <textarea></textarea>
+                    </div>
+                    <button type="submit">Enviar</button>
+                    <p id="submit-msg">Gracias por tu mensaje!</p>
+                </form>
+            </div>
+            <footer>
+                <p>© 2023 Pedro Pizarro</p>
+            </footer>
+        </main>
+        <script src="homepage.js"></script>
+        <script src="navbar.js"></script>
+
+    </body>
+</html>

@@ -1,0 +1,68 @@
+
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="./calculos.css">
+        <link rel="stylesheet" href="/style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Wix+Madefor+Text:wght@400;700;800&display=swap" rel="stylesheet">       
+
+        <title>Cálculos</title>
+    </head>
+    <body>
+        <nav>
+            <a href="/" class="nav-title">Portafolio</a>
+            <div id="nav-links" class="nav-links">
+                <a href="/aboutme/aboutme.html" class="nav-link">Sobre mí</a>
+            </div>
+            <svg onclick="toggleNav()" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+            </svg> 
+            <div id="nav-menu" class="hidden nav-menu">
+                <svg onclick="toggleNav()" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+                  </svg>
+                <a href="/aboutme/aboutme.html">Sobre mí</a>
+            </div>                       
+        </nav>
+        <main>  
+            <section class="sec-1">
+                <div class="calculadora-edad">
+                    <h2>Calculadora de Diferencia de edad</h2>
+                    <form>
+                        <label>Tu Edad:</label>
+                        <input type="number" id="edad-usuario" placeholder="Ingresa tu edad" required>
+                        
+                        <p>La diferencia de edad que tenemos es: <span id="diferencia-edad">0</span> años.</p>
+                    </form>
+                </div>
+            </section>
+            <section class="sec-2">
+                <div class="password-generator-container">
+                    <h2>
+                        Genera una <div id="green">contraseña random</div>
+                    </h2>
+                    
+                    <button onclick="generatePassword()">Generar contraseña</button>
+                    
+                    
+                    
+                    <div class="passwords">
+                        <p id="password1"></p>
+                        <p id="password2"></p>
+                    </div>
+                </div>
+            </section>
+            
+            
+        </main>
+        <footer>
+            <p>© 2023 Pedro Pizarro</p>
+        </footer>
+        <script src="calculos.js"></script>
+        <script src="/navbar.js"></script>
+    </body>
+    </html>

@@ -1,0 +1,218 @@
+
+
+main {
+    background-color: var(--color-1);
+    min-height: 100vh;
+    color: var(--color-5);
+    font: 'Inter', sans-serif;
+}
+
+.aboutme-hero {
+    width: 100%;
+    box-sizing: border-box;
+    min-height: 70vh;
+    padding: 0 10%;
+    color: var(--color-5);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.aboutme-hero h1{
+    font-family: 'Wix Madefor Text', sans-serif;
+    font-size: 5rem;
+}
+.aboutme-hero p{
+    text-align: center;
+    font-size: 1rem;
+    font-weight: 400;
+    margin: 5px 0px;
+}
+
+section {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 30px 0;
+}
+
+.sec-1{
+    background-color: var(--color-5);
+    color: var(--color-1);
+    width: 100%;
+    box-sizing: border-box;
+    padding: 5% 10% 10% 10%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 20px;
+}
+.sec-1 h3{
+    font-family: 'Wix Madefor Text', sans-serif;
+    font-size: 4rem;
+    font-weight: 800;
+    margin: 20px 0px;
+}
+.sec1-content{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+.sec-1 p{
+    max-width: 400px;
+    text-align: start;
+    font-size: 1rem;
+    font-weight: 300;
+    margin: 5px 0px;
+}
+.img-container{
+    width: 50%;
+    max-width: 350px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+.img-container img{
+    width: 100%;
+    border-radius: 15px;
+}
+
+
+
+.sec-2 {
+    background-color: var(--color-secundario);
+    color: var(--color-1);
+    width: 100%;
+    box-sizing: border-box;
+    padding: 5% 10%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 40px;
+}
+.sec-2 h3{
+    font-family: 'Wix Madefor Text', sans-serif;
+    font-size: 3rem;
+    font-weight: 800;
+    margin: 20px 0px;
+}
+.sec-2 h5{
+    font-family: 'Wix Madefor Text', sans-serif;
+    font-size: 1rem;
+    font-weight: 600;
+    max-width: 500px;
+    margin: 20px 0px;
+}
+.sec-2 p{
+    max-width: 300px;
+    text-align: center;
+    font-size: 1rem;
+    font-weight: 300;
+    margin: 5px;
+}
+.lugar-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    margin-bottom: 60px;
+}
+.lugar-container h4{
+    font-family: 'Wix Madefor Text', sans-serif;
+    font-size: 1.5rem;
+    font-weight: 800;
+    margin: 20px 0px;
+}
+
+
+.sec-3{
+    background-color: var(--color-primario);
+    color: var(--color-5);
+    width: 100%;
+    box-sizing: border-box;
+    padding: 5% 10%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 20px;
+}
+.sec-3 h3{
+    font-family: 'Wix Madefor Text', sans-serif;
+    font-size: 3rem;
+    font-weight: 800;
+    margin: 0px;
+    margin-bottom: 20px;
+}
+
+.videojuego-container{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    margin-bottom: 60px;
+}
+.videojuego-container p{
+    max-width: 300px;
+    text-align: center;
+    font-size: 1rem;
+    font-weight: 300;
+    margin: 5px 0px;
+}
+
+@media screen and (max-width: 600px){
+    
+    .sec1-content{
+        flex-direction: column;
+    }
+
+
+    .lugar-container{
+        flex-direction: column;
+    }
+    .lugar-container:nth-child(odd){
+        flex-direction: column-reverse;
+    }
+    .videojuego-container{
+        flex-direction: column;
+    }
+    .videojuego-container:nth-child(odd){
+        flex-direction: column-reverse;
+    }
+
+    .img-container{
+        width: 100%;
+        max-width: 100%;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
